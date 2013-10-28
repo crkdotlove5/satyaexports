@@ -24,11 +24,12 @@ Satyaexports::Application.configure do
     config.action_mailer.perform_deliveries = true
     config.action_mailer.raise_delivery_errors = false
     config.action_mailer.default :charset => "utf-8"
+ 
   ## Gmail SMTP
       config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      domain: "example.com",
+      domain: "gmail.com",
       authentication: "plain",
       enable_starttls_auto: true,
       user_name: ENV["demotest.devise@gmail.com"],

@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.15'
 
@@ -7,9 +7,14 @@ gem 'rails', '3.2.15'
 
 gem 'sqlite3'
 gem 'mail'
-
+gem 'rubber'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+
+
+###Mailer Gems
+gem 'mail_form'
+gem 'mail'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -37,3 +42,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'open4'

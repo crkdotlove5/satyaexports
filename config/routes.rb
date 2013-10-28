@@ -8,6 +8,8 @@ root :to => 'site#home'
 
 resources :supports, :only => [:new, :create]
 
+match 'orders' => 'contact#new', :as => 'contact', :via => :get
+match 'orders' => 'contact#create', :as => 'contact', :via => :post
 
   get "site/about"
 match 'about' => 'site#home'
@@ -19,7 +21,7 @@ match 'contact' => 'site#contact'
 match 'infra' => 'site#infra'
 
   get "site/orders"
-match 'orders' => 'site#orders'
+#match 'orders' => 'site#orders'
   
   get "site/gallery"
 match 'gallery' => 'site#gallery'

@@ -14,7 +14,7 @@ Satyaexports::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -38,18 +38,15 @@ Satyaexports::Application.configure do
 
   ### GMAIL SMTP
 
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.perform_deliveries = true
-  ActionMailer::Base.raise_delivery_errors = true
-  ActionMailer::Base.smtp_settings = {
-    :enable_starttls_auto => true,  
-    :address            => 'smtp.gmail.com',
-    :port               => 587,
-    :tls                  => true,
-    :domain             => 'gmail.com', #you can also use google.com
-    :authentication     => :plain,
-    :user_name          => 'demotest.devise@gmail.com',
-    :password           => 'allinone'
-  }
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :user_name            => 'drakeshs@gmail.com',
+      :password             => '9849913123+c',
+      :authentication       => 'plain',
+      :enable_starttls_auto => true  }
   ## GMAIL SMTP
 end
