@@ -35,6 +35,24 @@ Satyaexports::Application.configure do
       user_name: ENV["demotest.devise@gmail.com"],
       password: ENV["allinone"]
     }
+
+
+=begin
+# SEND GRID SMTP SETTINGS
+
+ActionMailer::Base.smtp_settings = {
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
+  :authentication => :plain,
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => 'heroku.com',
+  :enable_starttls_auto => true
+}
+# SEND GRID SMTP SETTINGS
+
+=end
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 

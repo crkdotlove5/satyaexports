@@ -6,7 +6,7 @@ app_user: app
 
 # REQUIRED: Notification emails (e.g. monit) get sent to this address
 #
-admin_email: "root@#{full_host}"
+admin_email: "saikiran.mothe@gmail.com"
 
 # OPTIONAL: If not set, you won't be able to access web_tools
 # server (graphite, graylog, monit status, haproxy status, etc)
@@ -58,9 +58,9 @@ cloud_providers:
 
     # REQUIRED The amazon keys and account ID (digits only, no dashes) used to access the AWS API
     #
-    access_key: XXX
-    secret_access_key: YYY
-    account: 'ZZZ'
+    access_key: AKIAINHB3SJAZUMFMTQA
+    secret_access_key: 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
+    account: 000703525777
 
     # REQUIRED:  The name of the amazon keypair and location of its private key
     #
@@ -86,8 +86,8 @@ cloud_providers:
     # Ubuntu 12.04 Precise instance-store 64-bit: ami-eafa5883
     #
     # m1.small or m1.large or m1.xlarge
-    image_type: c1.medium
-    image_id: ami-b6089bdf
+    image_type: t1.micro
+    image_id: ami-d03ea1e0
 
     # OPTIONAL: EC2 spot instance request support.
     #

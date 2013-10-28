@@ -7,7 +7,17 @@ gem 'rails', '3.2.15'
 
 gem 'sqlite3'
 gem 'mail'
+
+#Deployment
 gem 'rubber'
+gem 'open4'
+gem 'gelf'
+gem 'graylog2_exceptions', :git => 'git://github.com/wr0ngway/graylog2_exceptions.git'
+gem 'graylog2-resque'
+##Passenger
+gem 'amazon-ec2'
+gem 'passenger'
+
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
@@ -15,6 +25,8 @@ gem "twitter-bootstrap-rails"
 ###Mailer Gems
 gem 'mail_form'
 gem 'mail'
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
