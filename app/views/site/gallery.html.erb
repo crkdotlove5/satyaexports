@@ -1,0 +1,62 @@
+<div class="post" id="Gallery">
+					<h1 align="center">Products</h1>
+					<div class="entry">	
+	<div id="panel" align="center">
+		
+	    <a href="#" onclick="changeImagePrev()" style="font-size:70pt;text-decoration:none;">&lsaquo;</a>
+		<img id="largeImage" align="center" src="/assets/blackpearl.jpg"/> 
+		<a href="#" onclick="changeImageNext()" style="font-size:70pt;text-decoration:none;">&rsaquo;</a>
+		<div id="description" style="font-size:20pt">Black pearl</div> 
+		<script>
+		var myImage=document.getElementById("largeImage");
+		var imageArray=["/assets/blackpearl.jpg","/assets/blackgalaxy.jpg","/assets/blackpearl.jpg","/assets/blackspice.jpg","/assets/flashblue.jpg","/assets/iconbrown.jpg","/assets/jasminewhite.jpg","/assets/moonwhite.jpg","/assets/sappire blue.jpg","/assets/sappirebrown.jpg","/assets/silverpearl.jpg","/assets/surfgreen.jpg","/assets/tanbrown.jpg"];
+		var descArray=["Black pearl","Black Galaxy","Flash Blue","Icon Brown","Absolute Black","Moon White","Sapphire","Silver Pearl","Surf Green","Sappire Blue","Silver Pearl","Brown Green","Tan Brown"];
+		var imageIndex=0;
+		function changeImageNext()
+		{
+			imageIndex++;
+			if(imageIndex==imageArray.length)
+			{
+				imageIndex=0;
+			}
+			$('#largeImage').attr('src',imageArray[imageIndex]);
+			$('#description').html(descArray[imageIndex]);
+		}
+		function changeImagePrev()
+		{
+			imageIndex--;
+			if(imageIndex==-1)
+			{
+				imageIndex=imageArray.length-1;
+			}
+			$('#largeImage').attr('src',imageArray[imageIndex]);
+			$('#description').html(descArray[imageIndex]);
+		}
+		var intervalHandle=setInterval(changeImageNext,3000);
+		</script>
+	</div>
+	<div id="thumbs">
+		<h4 style="font-family:Helvetica;font-size:20pt;"> Thumbnails</h4>
+        <img src="/assets/blackpearl.jpg" height="50" width="50" alt="Black Pearl"/>
+        <img src="/assets/blackgalaxy.jpg" height="50" width="50" alt="Black Galaxy" />
+        <img src="/assets/blackpearl.jpg" height="50" width="50" alt="Flash Blue" />
+        <img src="/assets/blackspice.jpg" height="50" width="50" alt="Icon Brown" />
+        <img src="/assets/flashblue.jpg" height="50" width="50" alt="Absolute Black" />
+        <img src="/assets/iconbrown.jpg" height="50" width="50" alt="Moon White" />
+        <img src="/assets/jasminewhite.jpg" height="50" width="50" alt="Sapphire" />
+        <img src="/assets/moonwhite.jpg" height="50" width="50" alt="Silver Pearl" />
+        <img src="/assets/sappire blue.jpg" height="50" width="50" alt="Surf Green" />
+        <img src="/assets/sappirebrown.jpg" height="50" width="50" alt="Sappire Brown" />
+        <img src="/assets/silverpearl.jpg" height="50" width="50" alt="Silver Pearl" />
+        <img src="/assets/surfgreen.jpg" height="50" width="50" alt="Surf Green" />
+        <img src="/assets/tanbrown.jpg" height="50" width="50" alt="Tan Brown" />
+	</div>
+<script>
+$('#thumbs').delegate('img','click', function(){
+$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+$('#description').html($(this).attr('alt'));
+});
+ </script>	
+ 
+					</div>
+				</div>

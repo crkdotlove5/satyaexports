@@ -1,0 +1,42 @@
+	<div class="post" id="Infrastructure">
+					<h1 align="center">Infrastructure</h1>	
+				<div class="entry">
+
+					<h3> Unit-I Details </h3>
+
+		<div id="panel1" style="padding-top: 30px; padding-bottom: 30px;">
+		<img id="largeImage1" src="/assets/unit1/gangsaw.jpg" style="padding-left: 45px;"/>
+		<b><div id="description1" align="center" style="font-size:18pt; padding-right: 20px;">Gangsaws Machines-BARSANTI</div></b>
+	</div>
+	<div id="thumbs1">
+        <img src="/assets/unit1/gangsaw.jpg" height="100" width="100" alt="Gangsaws Machines-BARSANTI"/>
+        <img src="/assets/unit1/line polishing.jpg" height="100" width="100" alt="Line Polishing Machine" />
+        <img src="/assets/unit1/sin-Edge-cutting-machine.jpg" height="100" width="100" alt="Edge Cutting Machine" />
+        <img src="/assets/unit1/Wire-saw-profiling.jpg" height="100" width="100" alt="Wiresaws" />
+	</div>
+<script>
+$('#thumbs1').delegate('img','click', function(){
+	$('#largeImage1').attr('src',$(this).attr('src').replace('thumb1','large1'));
+	$('#description1').html($(this).attr('alt'));
+});
+</script>
+				<h3 style="padding-top: 30px;"> Unit-II Details </h3>
+<div id="panel2" style="padding-top: 30px; padding-bottom: 30px;">
+		<img id="largeImage2" src="/assets/unit2/Gang-saw-big.jpg" style="padding-left: 45px;"/>
+		<b><div id="description2" align="center" style="font-size:18pt; padding-right: 20px;">Big Gangsaws Machines</div></b>
+	</div>
+	<div id="thumbs2">
+        <img src="/assets/unit2/Gang-saw-big.jpg" height="100" width="100" alt="Big Gangsaws Machines"/>
+        <img src="/assets/unit2/line polishing.jpg" height="100" width="100" alt="Automatic line Polishing" />
+        <img src="/assets/unit2/edge cutting.jpg" height="100" width="100" alt="Edge Cutting Machine" />
+        <img src="/assets/unit2/wire saws.jpg" height="100" width="100" alt="Wiresaws" />
+	</div>
+<script>
+$('#thumbs2').delegate('img','click', function(){
+	$('#largeImage2').attr('src',$(this).attr('src').replace('thumb2','large2'));
+	$('#description2').html($(this).attr('alt'));
+});
+</script>
+				</div>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
