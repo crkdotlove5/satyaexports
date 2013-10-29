@@ -4,6 +4,12 @@ gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+=begin
+
+    access_key: AKIAINHB3SJAZUMFMTQA
+    secret_access_key: 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
+    account: 000703525777
+=end
 
 gem 'sqlite3'
 gem 'mail'
@@ -11,9 +17,10 @@ gem 'mail'
 #Deployment
 gem 'rubber'
 gem 'open4'
-gem 'gelf'
+#gem 'gelf'
 gem 'graylog2_exceptions', :git => 'git://github.com/wr0ngway/graylog2_exceptions.git'
 gem 'graylog2-resque'
+
 ##Passenger
 gem 'amazon-ec2'
 gem 'passenger'

@@ -25,6 +25,7 @@ Satyaexports::Application.configure do
     config.action_mailer.raise_delivery_errors = false
     config.action_mailer.default :charset => "utf-8"
  
+=begin
   ## Gmail SMTP
       config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
@@ -36,22 +37,23 @@ Satyaexports::Application.configure do
       password: ENV["allinone"]
     }
 
+=end
 
-=begin
 # SEND GRID SMTP SETTINGS
 
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => 'heroku.com',
+  :user_name      => ENV['satyaexports'],
+  :password       => ENV['Satyaexports123'],
+  :domain         => 'satyaexports.com',
   :enable_starttls_auto => true
 }
+
 # SEND GRID SMTP SETTINGS
 
-=end
+
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
