@@ -5,8 +5,8 @@
 		
 	    <a href="#" onclick="changeImagePrev()" style="font-size:70pt;text-decoration:none;">&lsaquo;</a>
 		<img id="largeImage" align="center" src="/assets/blackpearl.jpg"/> 
-		<a href="#" onclick="changeImageNext()" style="font-size:70pt;text-decoration:none;">&rsaquo;</a>
-		<div id="description" style="font-size:20pt">Black pearl</div> 
+		<a href="#" onclick="changeImageNext()" style="font-size:70pt;text-decoration:none;">&rsaquo;</a><br>
+		<br><div id="description" style="font-size:20pt">Black pearl</div> <hr>
 		<script>
 		var myImage=document.getElementById("largeImage");
 		var imageArray=["/assets/blackpearl.jpg","/assets/blackgalaxy.jpg","/assets/blackpearl.jpg","/assets/blackspice.jpg","/assets/flashblue.jpg","/assets/iconbrown.jpg","/assets/jasminewhite.jpg","/assets/moonwhite.jpg","/assets/sappire blue.jpg","/assets/sappirebrown.jpg","/assets/silverpearl.jpg","/assets/surfgreen.jpg","/assets/tanbrown.jpg"];
@@ -35,7 +35,7 @@
 		var intervalHandle=setInterval(changeImageNext,3000);
 		</script>
 	</div>
-	<div id="thumbs">
+	<div id="thumbs" style="text-align:center">
 		<h4 style="font-family:Helvetica;font-size:20pt;"> Thumbnails</h4>
         <img src="/assets/blackpearl.jpg" height="50" width="50" alt="Black Pearl"/>
         <img src="/assets/blackgalaxy.jpg" height="50" width="50" alt="Black Galaxy" />

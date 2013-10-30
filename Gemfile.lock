@@ -164,6 +164,9 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simple_form (2.1.0)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -201,7 +204,6 @@ PLATFORMS
 DEPENDENCIES
   amazon-ec2
   coffee-rails (~> 3.2.1)
-  gelf
   graylog2-resque
   graylog2_exceptions!
   jquery-rails
@@ -213,6 +215,7 @@ DEPENDENCIES
   rails (= 3.2.15)
   rubber
   sass-rails (~> 3.2.3)
+  simple_form
   sqlite3
   therubyracer
   twitter-bootstrap-rails

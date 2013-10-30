@@ -1,31 +1,44 @@
-<%= form_for @message, :url => contact_path do |form| %>
-  <fieldset class="fields">
-    <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name %>
-    </div>
-    
-    <div class="field">
-      <%= form.label :email %>
-      <%= form.text_field :email %>
-    </div>
-    <div class="field">
-      <%= form.label :mobile_number %>
-      <%= form.number_field :mobile_number %>
-    </div>
+<div class="well">
 
+  <div class="" style="text-align:center">
+    <h2>To order fill the below form</h2><hr> 
+  </div>
+ <div class="form-horizantal" style="text-align:center" >
+  <%= form_for @message, :url => contact_path do |form| %>
+  <div class="form-group">
+         <div class="col-sm-10">
+
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+      
       <div class="field">
-      <%= form.label :subject %>
-      <%= form.text_field :subject %>
+        <%= form.label :email %>
+        <%= form.text_field :email %>
+      </div>
+      <div class="field">
+        <%= form.label :mobile_number %>
+        <%= form.telephone_field :mobile_number %>
+      </div>
+
+        <div class="field">
+        <%= form.label :subject %>
+        <%= form.text_field :subject %>
+      </div>
+      
+      <div class="field">
+        <%= form.label :body %>
+        <%= form.text_area :body, size: "60x12" %>
+      </div>
     </div>
     
-    <div class="field">
-      <%= form.label :body %>
-      <%= form.text_area :body %>
-    </div>
-  </fieldset>
-  
-  <fieldset class="actions">
-    <%= form.submit "Send" %>
-  </fieldset>
-<% end %>
+    <fieldset class="actions" class="btn">
+      <%= form.submit "Send" %>
+    </fieldset>
+  <% end %>
+  </div>
+
+
+</div>
+
+ 

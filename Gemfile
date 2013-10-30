@@ -4,12 +4,8 @@ gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-=begin
 
-    access_key: AKIAINHB3SJAZUMFMTQA
-    secret_access_key: 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
-    account: 000703525777
-=end
+gem 'simple_form'
 
 gem 'sqlite3'
 gem 'mail'
@@ -47,18 +43,4 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
 gem 'open4'
